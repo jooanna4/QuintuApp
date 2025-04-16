@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuintuApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="container-barra">
+      <img src="logoAmbNom.png" alt="Logo QuintuApp" id="titol_quintu">
+      <div id="ultim_numero">
+        <!-- <p>Últim número:</p> -->
+        <div id="last-number">
+          <p>-</p>
+        </div>
+      </div>
+      <div id="premis">
+        <p>Premi quinto:</p>
+        <div class="diners">
+          <p id="quinto">-</p>
+          <p>€</p>
+        </div>
+        <p>Premi plena:</p>
+        <div class="diners">
+          <p id="plena">-</p>
+          <p id="plena">€</p>
+        </div>
+      </div>
+    </div>
+    <div id="announcement" style="display: none;"></div>
+    <table>
+      <tbody id="bingo-table">
+        <!-- Aquí irán las filas generadas -->
+      </tbody>
+    </table>
+  </div>
+  <script src="render_projector.js"></script>
+</body>
+
+</html>

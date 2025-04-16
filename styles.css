@@ -1,0 +1,178 @@
+:root {
+    --beige-color-100: #E6DDD9;
+    --beige-color-35: #e6ddd971;
+    --vermell: #ff0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* flex-direction: column; /* Ordenar elementos en columna */
+    align-items: center;
+    /* Centrar los elementos horizontalmente */
+    justify-content: center;
+    height: 100vh;
+    /* Asegurar que ocupe toda la altura de la pantalla */
+    box-sizing: border-box;
+}
+
+p {
+    color: var(--beige-color-100);
+    font-size: 20px;
+}
+
+/* Contenedor principal */
+#main-container {
+    height: 99vh;
+    width: 99vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#container-barra {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    /* Fondo gris oscuro */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 34px;
+}
+
+#titol_quintu {
+    display: block;
+    width: 100%; /* Ajusta el ancho al contenedor */
+    height: auto; /* Mantiene la proporción original */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+
+#ultim_numero {
+    text-align: left;
+    width: 100%;
+}
+
+#ultim_numero p {
+    margin-bottom: 12px;
+}
+
+#last-number {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #ff0000;
+    box-sizing: border-box;
+}
+
+#last-number p {
+    color: #FFF;
+    font-size: 150px;
+}
+
+#premis {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 15px;
+}
+
+.diners {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: 5px 5px 15px #484848;
+}
+
+.diners p {
+    font-size: 32px;
+}
+
+#plena {
+    font-size: 64px;
+}
+
+table {
+    width: 100%;
+    /* Ocupa el ancho completo de la pantalla */
+    height: 100%;
+    /* Ocupa el 90% de la altura de la pantalla */
+    margin: 0 auto;
+    /* Centra horizontalmente la tabla */
+    border-spacing: 10px;
+    /* Elimina espacios entre celdas */
+}
+
+td {
+    text-align: center;
+    /* Centrar horizontalmente el texto */
+    vertical-align: middle;
+    /* Centrar verticalmente el texto */
+    color: var(--beige-color-35);
+    font-size: calc(3vw + 1vh);
+    /* Ajustar tamaño del texto dinámicamente */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar por encima */
+}
+
+td.selected {
+    color: var(--beige-color-100);
+    font-weight: bold;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#last-number {
+    font-size: 3rem;
+    /* Tamaño grande */
+    color: #ffffff;
+    /* Texto blanco */
+    margin-top: 20px;
+    /* Separación del resto de elementos */
+    text-align: center;
+    /* Centrado */
+}
+
+#announcement {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border: 2px solid red;
+    border-radius: 10px;
+    z-index: 1000;
+}

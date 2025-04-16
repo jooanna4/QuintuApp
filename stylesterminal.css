@@ -1,0 +1,76 @@
+:root {
+    --beige-color-100: #E6DDD9;
+    --beige-color-35: #E6DDD959;
+    --vermell-100: #ff0000;
+    --vermell-50: #ff000080;
+    --color-barra: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; /* Activar Flexbox */
+    flex-direction: column; /* Colocar los elementos en una columna */
+    align-items: center; /* Asegurar que los elementos ocupen el ancho completo */
+    justify-content: center;
+    height: 100vh; /* Ocupar toda la altura de la pantalla */
+    width: 100%; /* Ocupar todo el ancho disponible */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 12px;
+}
+
+#taula-premis {
+    display: flex;
+    align-items: stretch;
+}
+
+#panel-control {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 12px;
+    background-color: var(--vermell-50);
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    /* Ocupa el ancho completo de la pantalla */
+    height: 100%;
+    /* Ocupa el 90% de la altura de la pantalla */
+    margin: 0 auto;
+    /* Centra horizontalmente la tabla */
+    border-spacing: 5px;
+    /* Elimina espacios entre celdas */
+}
+
+td {
+    text-align: center;
+    /* Centrar horizontalmente el texto */
+    vertical-align: middle;
+    /* Centrar verticalmente el texto */
+    font-size: 28px;
+    /* Ajustar tamaño del texto dinámicamente */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar por encima */
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td.selected {
+    background-color: var(--vermell-50);
+    font-weight: bold;
+}

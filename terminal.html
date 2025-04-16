@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuintuApp</title>
+  <link rel="stylesheet" href="stylesterminal.css">
+</head>
+
+<body>
+  <h1>Pantalla de control</h1>
+  <div id="taula-premis">
+    <div id="panel-control">
+      <div>
+        <label for="quinto-price">Premi quinto: </label>
+        <input type="text" id="quinto-price">
+      </div>
+      <div>
+        <label for="plena-price">Premi plena:</label>
+        <input type="text" id="plena-price">
+      </div>
+      <button id="reset-button">Nova Partida</button>
+      <button id="quinto-btn">Quinto cantat</button>
+      <button id="plena-btn">Plena cantada</button>
+      <button id="fullscreen-button">Pantalla Completa</button>
+    </div>
+    <table>
+      <tbody id="bingo-table">
+        <!-- Aquí irán las filas generadas -->
+      </tbody>
+    </table>
+  </div>
+  <script src="render_terminal.js"></script>
+</body>
+
+</html>
