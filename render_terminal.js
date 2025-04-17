@@ -69,3 +69,30 @@ quintoBtn.addEventListener('click', () => {
 plenaBtn.addEventListener('click', () => {
     window.electronAPI.announce('plena');
 });
+
+// Genera números aleatoris
+
+const randomButton = document.getElementById("random-number");
+
+// Mantenim una llista de números ja marcats
+let usedNumbers = new Set();
+
+randomButton.addEventListener('click', () => {
+    // Agafem tots els números que encara no s'han seleccionat
+    const availableCells = Array.from(document.querySelectorAll('td')).filter(td => !td.classList.contains('selected'));
+
+    if (availableCells.length === 0) {
+        alert("Ja s'han cantat tots els números!");
+        return;
+    }
+
+    // Escollim un número aleatori de la llista
+    const randomIndex = Math.floor(Math.random() * availableCells.length);
+    const selectedCell = availableCells[randomIndex];
+
+    // Marquem la cel·la com si haguéssim fet clic
+    selectedCell.classList.add('selected');
+
+    // Avisem el procés principal
+    window.electronAPI.cellClicked(selectedCell.id, true);
+});
